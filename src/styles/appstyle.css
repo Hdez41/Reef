@@ -201,6 +201,10 @@ p {
     width: 100%
 }
 
+.shop-item-price {
+    color: #000;
+}
+
 .shop-items {
     display: flex;
     flex-wrap: wrap;

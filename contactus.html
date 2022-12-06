@@ -8,38 +8,38 @@
 	<!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
 	<meta name="viewport"
 		content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-	<meta name="description" content="Online corals store" />
+	<meta name="description" content="This is a PWA Starter app" />
 
 	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
 	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
-
-	<!-- Facebook metadata -->
-	<meta property="og:image:width" content="192">
-	<meta property="og:image:height" content="192">
-	<meta property="og:title" content="Reef Frags Aquatic">
-	<meta property="og:description" content="Your online corals supplier">
-	<meta property="og:url" content="https://hdez41.github.io/Reef-Frags-Aquatic/">
-	<meta property="og:image" content="https://raw.githubusercontent.com/Hdez41/Reef-Frags-Aquatic/main/public/assets/icons/og-image.jpg/og-image.jpg">
 
 	<!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-title" content="Reef Frags Aquatic" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
+	<!-- Facebook metadata -->
+	<meta property="og:image:width" content="1284">
+	<meta property="og:image:height" content="672">
+	<meta property="og:title" content="Reef Frags Aquatic">
+	<meta property="og:description" content="Your online corals store">
+	<meta property="og:url" content="https://hdez41.github.io/Reef-Frags-Aquatic/">
+	<meta property="og:image"
+		content="https://raw.githubusercontent.com/Hdez41/Reef-Frags-Aquatic/main/public/assets/icons/og-image.jpg">
+
+
+
 	<!-- Imports an icon to represent the document. -->
-	<link rel="apple-touch-icon" href="public/assets/icons/apple-touch-icon.png">
-	<link rel="mask-icon" href="public/assets/icons/icon_512R.png" color="red">
-	<link rel="mask-icon" href="public/assets/icons/icon_512A.png" color="red">
-	<link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon-180x180.png" />
-	<link rel="icon" type="image/svg+xml" href="public/assets/icons/icon_512.svg">
-	<link rel="icon" type="image/png" href="public/assets/icons/android-chrome-maskable-512x512.png">
-	<link rel="icon" type="image/png" href="public/assets/icons/icon_192.png">
-	<link rel="icon" type="image/png" href="public/assets/icons/icon_16.ico.ico" sizes="16x16" />
-	<link rel="icon" type="image/png" href="public/assets/icons/icon_32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="public/assets/icons/icon_48.ico" sizes="48x48" />
-	<link  rel="icon"   href="public/assets/icons/favicon-16x16.png" type="image/png" />
-	<meta name="msapplication-TileColor" content="#f76a05">
-	<meta name="theme-color" content="#010101">
+	<link rel="icon" href="/assets/icons/icon_24.png" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="public/assets/icons/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
 	<link rel="manifest" href="public/manifest.json" />
@@ -56,10 +56,11 @@
 	<link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
 	<script type="module" href="/src/app-index.ts"></script>
 	<!-- .stellarnav required -->
-
 </head>
 
 <body>
+	<!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+	<app-index></app-index>
 	<!-- .header -->
 	<div class="header">
 		<a href="#">Reef Frags Aquatic</a>
@@ -72,7 +73,7 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="CoralCare.html">Coral Care</a></li>
-			<!-- <li><a href="contactus.html">Contactus</a></li>-->
+			<li><a href="contactus.html">Contactus</a></li>
 			<!-- <li><a href="">Item 5</a></li>
 			<li><a href="">Item 6</a></li>
 			<li class="drop-left"><a href="">Drop Left</a>
@@ -108,102 +109,103 @@
 		</ul>
 	</div>
 	<!-- .stellarnav -->
+	<!-- my body -->
 	<div class="containera">
 		<h2 class="section-header" id="section-header">
 			CONTACT FORM</h2>
-		<div class="containera">
-			<div class="slider">
-				<ul>
-					<li>
-						<img src="public/assets/img/product-1.jpg" alt="">
-					</li>
-					<li>
-						<img src="public/assets/img/product-2.jpg" alt="">
-					</li>
-					<li>
-						<img src="public/assets/img/product-3.jpg" alt="">
-					</li>
-					<li>
-						<img src="public/assets/img/product-4.jpg" alt="">
-					</li>
-				</ul>
-			</div>
+		<div class="slider">
+			<ul>
+				<li>
+					<img src="public/assets/img/product-1.jpg" alt="">
+				</li>
+				<li>
+					<img src="public/assets/img/product-2.jpg" alt="">
+				</li>
+				<li>
+					<img src="public/assets/img/product-3.jpg" alt="">
+				</li>
+				<li>
+					<img src="public/assets/img/product-4.jpg" alt="">
+				</li>
+			</ul>
+		</div>
 
-			<div class="containerb">
-				<div class="container">
-					<div class="wrapper">
-						<div class="content">
-							<p>Connect with us by sending your views.</p>
-						</div>
-						<div class="top-form">
-							<div class="inner-form">
-								<div class="label">name</div>
-								<input type="text" placeholder="Jhon">
-							</div>
-							<div class="inner-form">
-								<div class="label">email</div>
-								<input type="text" placeholder="Example@gmail.com">
-							</div>
-							<div class="inner-form">
-								<div class="label">phone</div>
-								<input type="text" placeholder="1234567890">
-							</div>
-						</div>
-						<div class="middle-form">
-							<div class="inner-form">
-								<div class="label">subject</div>
-								<input type="text" placeholder="Subject">
-							</div>
-						</div>
-						<div class="bottom-form">
-							<div class="inner-form">
-								<div class="label">message</div>
-								<textarea placeholder="Your message"></textarea>
-							</div>
-						</div>
-						<div class="btn">send form</div>
+		<div class="containerb">
+			<div class="container">
+				<div class="wrapper">
+					<div class="content">
+						<p>Connect with us by sending your views.</p>
 					</div>
+					<div class="top-form">
+						<div class="inner-form">
+							<div class="label">name</div>
+							<input type="text" placeholder="Jhon">
+						</div>
+						<div class="inner-form">
+							<div class="label">email</div>
+							<input type="text" placeholder="Example@gmail.com">
+						</div>
+						<div class="inner-form">
+							<div class="label">phone</div>
+							<input type="text" placeholder="1234567890">
+						</div>
+					</div>
+					<div class="middle-form">
+						<div class="inner-form">
+							<div class="label">subject</div>
+							<input type="text" placeholder="Subject">
+						</div>
+					</div>
+					<div class="bottom-form">
+						<div class="inner-form">
+							<div class="label">message</div>
+							<textarea placeholder="Your message"></textarea>
+						</div>
+					</div>
+					<div class="btn">send form</div>
 				</div>
 			</div>
-			<div class="containerb">
-				<footer class="main-footer">
-					<div class="container main-footer-container">
-						<h3 class="footer-band-name">Follow us, or text us</h3>
-						<ul class="nav footer-nav">
-							<li>
-								<a href="https://www.instagram.com" target="_blank">
-									<img src="public/assets/img/instagram.png">
-									<span class="footer-item-title">Instagram
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com" target="_blank">
-									<img src="public/assets/img/Facebook Log.png">
-									<span class="footer-item-title">Facebook
-									</span>
-							</li>
-							<li>
-								<a href="https://wa.link/0a6bkn" target="_blank">
-									<img src="public/assets/img/w2.1.png">
-									<span class="footer-item-title">WhatsApp
-									</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</footer>
-
-			</div>
 		</div>
-		<script>
-			if ('serviceWorker' in navigator) {
-				navigator.serviceWorker.register(
-					'/Reef-Frags-Aquatic/sw.js/sw.js',
-					{ scope: '/Reef-Frags-Aquatic/sw.js/' }
-				);
-			}
-		</script>
+
+	</div>
+	<footer class="main-footer">
+		<div class="container main-footer-container">
+			<h3 class="footer-band-name">Follow us, or text us</h3>
+			<ul class="nav footer-nav">
+				<li>
+					<a href="https://www.instagram.com" target="_blank">
+						<img src="public/assets/img/instagram.png">
+						<span class="footer-item-title">Instagram
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com" target="_blank">
+						<img src="public/assets/img/Facebook Log.png">
+						<span class="footer-item-title">Facebook
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://wa.link/0a6bkn" target="_blank">
+						<img src="public/assets/img/w2.1.png">
+						<span class="footer-item-title">WhatsApp
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register(
+				'/Reef-Frags-Aquatic/sw.js/sw.js',
+				{ scope: '/Reef-Frags-Aquatic/sw.js/' }
+			);
+		}
+	</script>
 </body>
 
 </html>

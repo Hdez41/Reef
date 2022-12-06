@@ -1,6 +1,6 @@
 {
   "id": "Reef1",
-  "scope": "/Reef-Frags-Aquatic/",
+  "scope": "Reef-Frags-Aquatic/",
   "name": "Reef Frags Aquatic",
   "display_override": [
     "window-controls-overlay",
@@ -87,8 +87,8 @@
   ],
   "shortcuts": [
     {
-      "name": "/Reef-Frags-Aquatic",
-      "short_name": "/Reef-Frags-Aquatic",
+      "name": "Reef-Frags-Aquatic",
+      "short_name": "Reef-Frags-Aquatic",
       "description": "Open the offline page",
       "url": "https://hdez41.github.io/Reef-Frags-Aquatic/",
       "icons": [
@@ -104,12 +104,12 @@
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {
-      "title": "/Reef Frags Aquatic",
+      "title": "Reef Frags Aquatic",
       "text": "Your online corals store",
       "url": "https://hdez41.github.io/Reef-Frags-Aquatic/",
       "files": [
         {
-          "name": "/Reef Frags Aquatic",
+          "name": "Reef Frags Aquatic",
           "accept": [
             ".html",
             ".mhtml",

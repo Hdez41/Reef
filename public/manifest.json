@@ -1,7 +1,7 @@
 {
   "id": "Reef1",
   "scope": "/Reef-Frags-Aquatic/",
-  "name": "/Reef Frags Aquatic",
+  "name": "Reef Frags Aquatic",
   "display_override": [
     "window-controls-overlay",
     "minimal-ui"
@@ -10,7 +10,7 @@
   "start_url": "/Reef-Frags-Aquatic/",
   "short_name": "/Reef-Frags-Aquatic",
   "theme_color": "#010101",
-  "description": "Your online corals supplier",
+  "description": "Your online corals store",
   "orientation": "any",
   "background_color": "#f76a05",
   "related_applications": [],
@@ -105,7 +105,7 @@
     "enctype": "multipart/form-data",
     "params": {
       "title": "/Reef Frags Aquatic",
-      "text": "Your online corals supplier",
+      "text": "Your online corals store",
       "url": "https://hdez41.github.io/Reef-Frags-Aquatic/",
       "files": [
         {

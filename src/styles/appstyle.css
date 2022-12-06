@@ -129,6 +129,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
+    max-width: fit-content;
     max-width: -moz-fit-content;
     max-width: 90%;
     max-height: -moz-fit-content;
@@ -244,7 +245,7 @@ p {
     color: rgb(255, 245, 245);
     margin: auto;
     padding-top: 2%;
-    font-size: 45px;
+    font-size: 25px;
 }
 
 .footer-nav img {
@@ -259,7 +260,7 @@ p {
     width: auto;
     text-align: center;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 15px;
     color: rgb(255, 255, 255);
     padding: 7px
 }

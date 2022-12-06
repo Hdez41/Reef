@@ -340,10 +340,12 @@
 	<script>
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.register(
-				'/sw.js'
+				'/Reef-Frags-Aquatic/sw.js/sw.js',
+			{ scope: '/Reef-Frags-Aquatic/sw.js/' }
 			);
 		}
 	</script>
+
 	<!-- SW -->
 	<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
 </body>

@@ -93,7 +93,7 @@
       "url": "https://hdez41.github.io/Reef-Frags-Aquatic/",
       "icons": [
         {
-          "src": "assets/icons/icon_192.png",
+          "src": "public/assets/icons/icon_192.png",
           "sizes": "192x192"
         }
       ]

@@ -2,15 +2,57 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<title>Reef Frags Aquatic</title>
-	<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet">
-	<!-- required -->
+	<meta charset="utf-8" />
+	<title>PWA Starter</title>
+
+	<!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+	<meta name="viewport"
+		content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+	<meta name="description" content="This is a PWA Starter app" />
+
+	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+	<!-- Facebook metadata -->
+	<meta property="og:image:width" content="279">
+	<meta property="og:image:height" content="279">
+	<meta property="og:title" content="Reef Frags Aquatic">
+	<meta property="og:description" content="Your online corals supplier">
+	<meta property="og:image" content="https://github.com/Hdez41/Reef-Frags-Aquatic/blob/main/public/assets/icons/og-image.jpg">
+	<meta property="og:url" content="https://hdez41.github.io/Reef-Frags-Aquatic/">
+
+
+	<!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="PWA Starter" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<!-- Imports an icon to represent the document. -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+
+
+	<!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+	<link rel="manifest" href="/manifest.json" />
+
+	<!-- light mode and dark mode CSS -->
+	<link rel="stylesheet" media="(prefers-color-scheme:light)"
+		href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+	<link rel="stylesheet" media="(prefers-color-scheme:dark)"
+		href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+		onload="document.documentElement.classList.add('sl-theme-dark');">
+
+	<!-- .stellarnav required -->
 	<link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
 	<link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
-	<!-- required -->
+	<script type="module" href="/src/app-index.ts"></script>
+	<!-- .stellarnav required -->
+
 </head>
 
 <body>
@@ -219,23 +261,23 @@
 					<span class="shop-item-price">$34.99
 					</span>
 					<form Id="paypal-submit" class="addpaypal" target="paypal"
-					action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
-					<input type="hidden" name="cmd" value="_cart">
-					<input type="hidden" name="business" value="dhc_inc@yahoo.com">
-					<input type="hidden" name="lc" value="US">
-					<input type="hidden" name="item_name" value="Rainbow Yoda">
-					<input type="hidden" name="amount" value="34.99">
-					<input type="hidden" name="currency_code" value="USD">
-					<input type="hidden" name="button_subtype" value="products">
-					<input type="hidden" name="no_note" value="0">
-					<input type="hidden" name="add" value="1">
-					<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
-						border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
-						height="1">
-				</form>
+						<input type="hidden" name="cmd" value="_cart">
+						<input type="hidden" name="business" value="dhc_inc@yahoo.com">
+						<input type="hidden" name="lc" value="US">
+						<input type="hidden" name="item_name" value="Rainbow Yoda">
+						<input type="hidden" name="amount" value="34.99">
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="hidden" name="button_subtype" value="products">
+						<input type="hidden" name="no_note" value="0">
+						<input type="hidden" name="add" value="1">
+						<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
+							name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+							height="1">
+					</form>
 				</div>
 			</div>
 
@@ -277,25 +319,33 @@
 				<ul class="social-nav">
 			</div>
 		</footer>
-		</div>
 	</div>
-		<!-- required -->
-		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-		<script type="text/javascript" src="public/stellarnav.min.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function ($) {
-				jQuery('.stellarnav').stellarNav({
-					theme: 'dark',
-					breakpoint: 960,
-					position: 'right',
-					phoneBtn: '18009997788',
-					locationBtn: 'https://www.google.com/maps'
-				});
+	</div>
+	<!-- required -->
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script type="text/javascript" src="public/stellarnav.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			jQuery('.stellarnav').stellarNav({
+				theme: 'dark',
+				breakpoint: 960,
+				position: 'right',
+				phoneBtn: '18009997788',
+				locationBtn: 'https://www.google.com/maps'
 			});
-		</script>
-		<!-- required -->
-
-		<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+		});
+	</script>
+	<!-- required -->
+	<!-- SW -->
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register(
+				'/sw.js'
+			);
+		}
+	</script>
+	<!-- SW -->
+	<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
 </body>
 
 </html>

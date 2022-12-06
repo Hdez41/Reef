@@ -85,20 +85,6 @@
     "education",
     "security"
   ],
-  "shortcuts": [
-    {
-      "name": "Reef-Frags-Aquatic",
-      "short_name": "Reef-Frags-Aquatic",
-      "description": "Open the offline page",
-      "url": "https://hdez41.github.io/Reef-Frags-Aquatic/",
-      "icons": [
-        {
-          "src": "public/assets/icons/icon_192.png",
-          "sizes": "192x192"
-        }
-      ]
-    }
-  ],
   "share_target": {
     "action": "decision.php",
     "method": "POST",

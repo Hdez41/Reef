@@ -270,8 +270,8 @@ p {
 
 .main-footer-container {
     text-align: center;
-    background-image: url(img/Background\ 3.jpg);
-    background-image: url("public/assets/img/Background 3.jpg");
+/*    background-image: url(img/Background\ 3.jpg);
+    background-image: url("public/assets/img/Background 3.jpg"); */
     height: auto;
     margin-top: 5%;
     background-color: black;
@@ -279,7 +279,7 @@ p {
 
 ul.nav.footer-nav {
     display: flex;
-    background-image: url("img/Background\ 3.jpg");
+ /*   background-image: url("img/Background\ 3.jpg"); */
 }
 
 .main-footer {
